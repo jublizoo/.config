@@ -178,6 +178,9 @@ vim.lsp.enable({ "gopls", "pylsp" })
 -- Show error messages
 vim.api.nvim_set_keymap('n', '<space>e', '<cmd>lua vim.diagnostic.open_float()<CR>', {})
 vim.keymap.set('n', '<leader>s', vim.lsp.buf.signature_help, { silent = true })
+vim.keymap.set('n', 'gd', vim.lsp.buf.definition)
+vim.keymap.set('n', 'grr', vim.cmd('normal! :LspRestart'))
+vim.keymap.set('n', 'gt', vim.lsp.buf.hover)
 
 -- Other packages
 vim.pack.add({
@@ -198,6 +201,7 @@ require('neoscroll').setup()
 
 -- Plugin keybinds
 telescope = require('telescope.builtin')
-vim.keymap.set('n', '<leader><leader>', telescope.find_files, { desc = 'Telescope find files' })
-vim.keymap.set('n', '<leader>b', telescope.buffers, { desc = 'Telescope find files' })
+vim.keymap.set('n', '<leader>ff', telescope.find_files, { desc = 'Telescope find files' })
+vim.keymap.set('n', '<leader>fg', telescope.live_grep, { desc = 'Telescope find files' })
+vim.keymap.set('n', '<leader>fb', telescope.buffers, { desc = 'Telescope find files' })
 vim.keymap.set('n', '-', '<CMD>Oil<CR>')
