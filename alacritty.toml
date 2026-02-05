@@ -1,0 +1,46 @@
+[keyboard]
+bindings = [
+	{ key = "A", mods = "Command", chars = "\u0001" },
+  { key = "J", mods = "Command", chars = "\u000A" }, # Ctrl + j
+  { key = "K", mods = "Command", chars = "\u000B" }, # Ctrl + k
+  { key = "L", mods = "Command", chars = "\u000C" }, # Ctrl + l
+  { key = "O", mods = "Command", chars = "\u000F" }, # Ctrl + o
+  { key = "I", mods = "Command", chars = "\u0009" }, # Ctrl + i (Tab)
+  { key = "E", mods = "Command", chars = "\u0005" }, # Ctrl + e
+  { key = "Y", mods = "Command", chars = "\u0019" }, # Ctrl + y
+  { key = "D", mods = "Command", chars = "\u0004" }, # Ctrl + d
+  { key = "U", mods = "Command", chars = "\u0015" }, # Ctrl + u
+  # F18 → Ctrl + h
+  { key = "F18", chars = "\u0008" },
+  # ⌘N → Ctrl+N
+  { key = "N", mods = "Command", chars = "\u000E" },
+  # ⌘P → Ctrl+P
+  { key = "P", mods = "Command", chars = "\u0010" },
+  # ⌘Z → Ctrl+Z
+  { key = "Z", mods = "Command", chars = "\u001A" },
+  # ⌘F → Ctrl+F
+  { key = "F", mods = "Command", chars = "\u0006" },
+]
+
+[window]
+dynamic_title = true
+
+[font]
+size = 13.0
+
+[font.normal]
+family = "MesloLGS Nerd Font Mono"
+style = "Regular"
+
+[font.bold]
+family = "MesloLGS Nerd Font Mono"
+style = "Bold"
+
+[font.italic]
+family = "MesloLGS Nerd Font Mono"
+style = "Italic"
+
+[font.bold_italic]
+family = "MesloLGS Nerd Font Mono"
+style = "Bold Italic"
+
