@@ -2,7 +2,7 @@ require('obsidian').setup({
 	workspaces = {
 		{
 			name = "personal",
-			path = "~/Documents/Obsidian Vault/",
+			path = "~/",
 		},
 	},
 	completion = {
@@ -21,6 +21,19 @@ local function enter_md()
 	vim.keymap.set('n', 'j', 'gj')
 	vim.keymap.set('n', 'k', 'gk')
 
+	-- keys that should behave differently w.r.t. wrapped lines
+	local wrap_keys = { '^', '$', 'j', 'k' }
+	for _, key in ipairs(wrap_keys) do
+		vim.keymap.set('n', key, function ()
+			local count = vim.v.count1
+			if count <= 1 then
+				vim.cmd("normal! " .. count .. "g" .. key)
+			else
+				vim.cmd("normal!" .. count .. key)
+			end
+		end)
+	end
+
 	-- conceal by only showing 1 char
 	-- vim.opt_local.conceallevel = 3
 	-- modes where conceal is active
@@ -29,6 +42,7 @@ local function enter_md()
     --   syntax match UrlFull /https\?:\/\/\S\+/ conceal
     -- ]])
 end
+
 local function exit_md()
 	vim.o.breakindent = false
 	vim.o.wrap = false

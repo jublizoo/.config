@@ -6,10 +6,8 @@ vim.pack.add({
 	"https://github.com/hrsh7th/nvim-cmp",
 })
 
-require "nvim-treesitter.configs".setup({
-	ensure_installed = { "go", "python", "c", "rust", "cpp" },
-	highlight = { enable = true }
-})
+require "nvim-treesitter".install { "go", "python", "c", "rust", "cpp" }
+
 
 -- More options availabe, such as git completion
 local cmp = require "cmp"

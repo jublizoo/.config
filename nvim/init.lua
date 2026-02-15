@@ -36,6 +36,9 @@ vim.keymap.set('n', '<C-j>', '<C-w>j')
 vim.keymap.set('n', '<C-k>', '<C-w>k')
 vim.keymap.set('n', '<C-l>', '<C-w>l')
 
+-- Easier tab navigation
+vim.keymap.set('n', '<S-h>', '<C-w>l')
+
 -- Colorthemes
 vim.pack.add({
 		{ src = "https://github.com/projekt0n/github-nvim-theme" },
