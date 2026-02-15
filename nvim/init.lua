@@ -1,14 +1,11 @@
 -- TODO: Comment in normal mode
 -- Enter (O + esc)
 -- Tip: use CC for indent on empty line
---
 -- gcc in normal mode to comment, gc in visual 
 
 vim.o.number = true
 vim.o.relativenumber = true
 vim.o.wrap = false
--- - SELECT x FROM my_table WHERE name = "chung" GROUPBY column_name
---aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 
 -- Width of actual tab character, in columns. Alignment to this number of columns.
 
@@ -70,7 +67,7 @@ require("extensions.pack")
 require("lsp.setup");
 -- Must be after lsp.setup, obsidian uses nvim-cmp
 require("extensions.extensions")
-require("attention")
-package.loaded["gradient"] = nil
-local grad = require("gradient")
-grad.ApplyGradient()
+-- require("attention")
+-- package.loaded["gradient"] = nil
+-- local grad = require("gradient")
+-- grad.ApplyGradient()
