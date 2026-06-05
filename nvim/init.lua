@@ -7,11 +7,8 @@
 vim.o.number = true
 vim.o.relativenumber = true
 vim.o.wrap = false
--- - SELECT x FROM my_table WHERE name = "chung" GROUPBY column_name
---aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 
 -- Width of actual tab character, in columns. Alignment to this number of columns.
-
 vim.o.tabstop = 4
 -- Whitespace used for an indentation. Multiple indentations at the start is affected by this.
 vim.o.shiftwidth = 4
@@ -67,7 +64,8 @@ require("extensions.pack")
 require("lsp.setup");
 -- Must be after lsp.setup, obsidian uses nvim-cmp
 require("extensions.extensions")
-require("attention")
-package.loaded["gradient"] = nil
-local grad = require("gradient")
-grad.ApplyGradient()
+
+-- require("attention")
+-- package.loaded["gradient"] = nil
+-- local grad = require("gradient")
+-- grad.ApplyGradient()

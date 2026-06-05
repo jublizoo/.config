@@ -29,13 +29,11 @@ vim.keymap.set('n', '<leader>ff', telescope.find_files, { desc = 'Telescope find
 vim.keymap.set('n', '<leader>fg', telescope.live_grep, { desc = 'Telescope find files' })
 vim.keymap.set('n', '<leader>fb', telescope.buffers, { desc = 'Telescope find files' })
 
-require('arrow').setup({
-	show_icons = false,
-    leader_key = ';',
-    buffer_leader_key = 'm',
-})
+-- require('arrow').setup({
+-- 	show_icons = false,
+--     leader_key = ';',
+--     buffer_leader_key = 'm',
+-- })
 
-require('neoscroll').setup()
 require('nvim-autopairs').setup {}
-
 require('extensions.obsidian')

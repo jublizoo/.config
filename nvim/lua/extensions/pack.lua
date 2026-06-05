@@ -5,7 +5,6 @@ vim.pack.add({
 		"https://github.com/nvim-telescope/telescope.nvim",
 		"https://github.com/MunifTanjim/nui.nvim",
 		"https://github.com/stevearc/oil.nvim",
-		"https://github.com/karb94/neoscroll.nvim",
 		"https://github.com/windwp/nvim-autopairs",
 		{
 			src = "https://github.com/glacambre/firenvim",
