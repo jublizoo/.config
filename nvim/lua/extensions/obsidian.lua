@@ -1,8 +1,8 @@
 require('obsidian').setup({
 	workspaces = {
 		{
-			name = "personal",
-			path = "~/Documents/Obsidian Vault/",
+			name = "vault",
+			path = "~/",
 		},
 	},
 	completion = {
@@ -20,6 +20,25 @@ local function enter_md()
 	vim.keymap.set('n', '$', 'g$')
 	vim.keymap.set('n', 'j', 'gj')
 	vim.keymap.set('n', 'k', 'gk')
+	vim.keymap.set('v', '^', 'g^')
+	vim.keymap.set('v', '$', 'g$')
+	vim.keymap.set('v', 'j', 'gj')
+	vim.keymap.set('v', 'k', 'gk')
+
+	vim.treesitter.start()
+
+	-- keys that should behave differently w.r.t. wrapped lines
+	local wrap_keys = { '^', '$', 'j', 'k' }
+	for _, key in ipairs(wrap_keys) do
+		vim.keymap.set('n', key, function ()
+			local count = vim.v.count1
+			if count <= 1 then
+				vim.cmd("normal! " .. count .. "g" .. key)
+			else
+				vim.cmd("normal!" .. count .. key)
+			end
+		end)
+	end
 
 	-- conceal by only showing 1 char
 	-- vim.opt_local.conceallevel = 3
@@ -29,6 +48,7 @@ local function enter_md()
     --   syntax match UrlFull /https\?:\/\/\S\+/ conceal
     -- ]])
 end
+
 local function exit_md()
 	vim.o.breakindent = false
 	vim.o.wrap = false
@@ -36,6 +56,10 @@ local function exit_md()
 	vim.keymap.del('n', 'k')
 	vim.keymap.del('n', '^')
 	vim.keymap.del('n', '$')
+	vim.keymap.del('v', '^')
+	vim.keymap.del('v', '$')
+	vim.keymap.del('v', 'j')
+	vim.keymap.del('v', 'k')
 end
 
 local enter_exit_hooks = {{ ".md", enter_md, exit_md }}

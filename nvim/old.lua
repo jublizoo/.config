@@ -21,10 +21,10 @@ local function search (key, reverse, stop_short)
 
 	end, { noremap = true, silent = true, desc = "custom f/t search" })
 end
--- search('f', false, false)
--- search('F', true, false)
--- search('t', false, true)
--- search('T', true, true)
+search('f', false, false)
+search('F', true, false)
+search('t', false, true)
+search('T', true, true)
 
 
 -- local blink = require("blink.cmp")

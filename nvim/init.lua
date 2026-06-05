@@ -1,7 +1,6 @@
 -- TODO: Comment in normal mode
 -- Enter (O + esc)
 -- Tip: use CC for indent on empty line
---
 -- gcc in normal mode to comment, gc in visual 
 
 vim.o.number = true
@@ -53,10 +52,15 @@ vim.keymap.set('n', '<C-j>', '<C-w>j')
 vim.keymap.set('n', '<C-k>', '<C-w>k')
 vim.keymap.set('n', '<C-l>', '<C-w>l')
 
+-- Easier tab navigation
+vim.keymap.set('n', '<S-h>', '<C-w>l')
+
 -- Colorthemes
 vim.pack.add({
 	{ src = "https://github.com/projekt0n/github-nvim-theme" },
 	{ src = "https://github.com/catppuccin/nvim" },
+	{ src = "https://github.com/Mofiqul/dracula.nvim" },
+	{ src = "https://github.com/ribru17/bamboo.nvim" },
 })
 vim.cmd('colorscheme catppuccin-frappe')
 
