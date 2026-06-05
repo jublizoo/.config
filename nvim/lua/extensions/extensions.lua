@@ -55,5 +55,4 @@ end
 -- })
 
 require('nvim-autopairs').setup {}
-
 require('extensions.obsidian')

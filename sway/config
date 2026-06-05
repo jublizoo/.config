@@ -18,6 +18,11 @@ set $term alacritty
 # Your preferred application launcher
 set $menu rofi -show drun
 
+bindsym Mod4+h exec wtype -k Left
+bindsym Mod4+j exec wtype -k Down
+bindsym Mod4+k exec wtype -k Up
+bindsym Mod4+l exec wtype -k Right
+
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)

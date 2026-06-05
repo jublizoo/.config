@@ -1,7 +1,7 @@
 require('obsidian').setup({
 	workspaces = {
 		{
-			name = "personal",
+			name = "vault",
 			path = "~/",
 		},
 	},
@@ -20,6 +20,12 @@ local function enter_md()
 	vim.keymap.set('n', '$', 'g$')
 	vim.keymap.set('n', 'j', 'gj')
 	vim.keymap.set('n', 'k', 'gk')
+	vim.keymap.set('v', '^', 'g^')
+	vim.keymap.set('v', '$', 'g$')
+	vim.keymap.set('v', 'j', 'gj')
+	vim.keymap.set('v', 'k', 'gk')
+
+	vim.treesitter.start()
 
 	-- keys that should behave differently w.r.t. wrapped lines
 	local wrap_keys = { '^', '$', 'j', 'k' }
@@ -50,6 +56,10 @@ local function exit_md()
 	vim.keymap.del('n', 'k')
 	vim.keymap.del('n', '^')
 	vim.keymap.del('n', '$')
+	vim.keymap.del('v', '^')
+	vim.keymap.del('v', '$')
+	vim.keymap.del('v', 'j')
+	vim.keymap.del('v', 'k')
 end
 
 local enter_exit_hooks = {{ ".md", enter_md, exit_md }}

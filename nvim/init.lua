@@ -60,6 +60,8 @@ vim.keymap.set('n', '<S-h>', '<C-w>l')
 vim.pack.add({
 	{ src = "https://github.com/projekt0n/github-nvim-theme" },
 	{ src = "https://github.com/catppuccin/nvim" },
+	{ src = "https://github.com/Mofiqul/dracula.nvim" },
+	{ src = "https://github.com/ribru17/bamboo.nvim" },
 })
 vim.cmd('colorscheme catppuccin-frappe')
 
