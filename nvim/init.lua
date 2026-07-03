@@ -63,7 +63,7 @@ vim.pack.add({
 	{ src = "https://github.com/Mofiqul/dracula.nvim" },
 	{ src = "https://github.com/ribru17/bamboo.nvim" },
 })
-vim.cmd('colorscheme catppuccin-frappe')
+vim.cmd('colorscheme bamboo')
 
 require("extensions.pack")
 require("lsp.setup");
