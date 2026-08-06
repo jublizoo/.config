@@ -1,0 +1,109 @@
+    OpenRGB v0.9+ (1.0rc2)
+    Commit:  from 
+    Launched: 20260719_025218
+====================================================================================================
+
+59    |Info:    [ResourceManager] Saving detector settings
+61    |Info:    [ResourceManager] Initializing HID interfaces: Success
+61    |Info:    ------------------------------------------------------
+61    |Info:    |               Start device detection               |
+61    |Info:    ------------------------------------------------------
+65    |Info:    ------------------------------------------------------
+65    |Info:    |             Detecting I2C interfaces               |
+65    |Info:    ------------------------------------------------------
+65    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-3 Device 8086:A780 Subsystem: 1462:7E06
+65    |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+65    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-10 Device 0000:0000 Subsystem: 0000:0000
+65    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-1 Device 8086:A780 Subsystem: 1462:7E06
+65    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-17 Device 10DE:2803 Subsystem: 196E:13ED
+65    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-8 Device 8086:A780 Subsystem: 1462:7E06
+65    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-15 Device 10DE:2803 Subsystem: 196E:13ED
+65    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-6 Device 8086:A780 Subsystem: 1462:7E06
+65    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-13 Device 10DE:2803 Subsystem: 196E:13ED
+65    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-4 Device 8086:A780 Subsystem: 1462:7E06
+65    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-11 Device 8086:7A23 Subsystem: 1462:7E06
+65    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-2 Device 8086:A780 Subsystem: 1462:7E06
+65    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-0 Device 8086:A780 Subsystem: 1462:7E06
+65    |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+65    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-9 Device 0000:0000 Subsystem: 0000:0000
+65    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-16 Device 10DE:2803 Subsystem: 196E:13ED
+65    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-7 Device 8086:A780 Subsystem: 1462:7E06
+65    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-14 Device 10DE:2803 Subsystem: 196E:13ED
+65    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-5 Device 8086:A780 Subsystem: 1462:7E06
+65    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-12 Device 10DE:2803 Subsystem: 196E:13ED
+65    |Info:    ------------------------------------------------------
+65    |Info:    |               Detecting I2C devices                |
+65    |Info:    ------------------------------------------------------
+387   |Info:    [Corsair Dominator Platinum] Registering RGB controller
+409   |Info:    [Corsair Dominator Platinum] Registering RGB controller
+471   |Info:    ------------------------------------------------------
+471   |Info:    |            Detecting I2C DIMM modules              |
+471   |Info:    ------------------------------------------------------
+520   |Info:    ------------------------------------------------------
+520   |Info:    |               Detecting I2C PCI devices            |
+520   |Info:    ------------------------------------------------------
+523   |Info:    ------------------------------------------------------
+523   |Info:    |               Detecting HID devices                |
+523   |Info:    ------------------------------------------------------
+590   |Info:    [MSI Z790 GAMING PLUS WIFI (MS-7E06)] Registering RGB controller
+590   |Info:    ------------------------------------------------------
+590   |Info:    |            Detecting libusb HID devices            |
+590   |Info:    ------------------------------------------------------
+601   |Info:    ------------------------------------------------------
+601   |Info:    |              Detecting other devices               |
+601   |Info:    ------------------------------------------------------
+626   |Info:    [ResourceManager] Calling Post-detection callbacks
+626   |Info:    ------------------------------------------------------
+626   |Info:    |                Detection completed                 |
+626   |Info:    ------------------------------------------------------
+139030|Info:    [ResourceManager] Initializing HID interfaces: Success
+139030|Warning: [ResourceManager] Detection coroutine: assigned a new coroutine when one was already scheduled - probably two rescan events sent at once
+139030|Info:    ------------------------------------------------------
+139030|Info:    |               Start device detection               |
+139030|Info:    ------------------------------------------------------
+139037|Info:    ------------------------------------------------------
+139037|Info:    |             Detecting I2C interfaces               |
+139037|Info:    ------------------------------------------------------
+139037|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-3 Device 8086:A780 Subsystem: 1462:7E06
+139037|Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+139037|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-10 Device 0000:0000 Subsystem: 0000:0000
+139037|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-1 Device 8086:A780 Subsystem: 1462:7E06
+139037|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-17 Device 10DE:2803 Subsystem: 196E:13ED
+139037|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-8 Device 8086:A780 Subsystem: 1462:7E06
+139038|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-15 Device 10DE:2803 Subsystem: 196E:13ED
+139038|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-6 Device 8086:A780 Subsystem: 1462:7E06
+139038|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-13 Device 10DE:2803 Subsystem: 196E:13ED
+139046|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-4 Device 8086:A780 Subsystem: 1462:7E06
+139046|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-11 Device 8086:7A23 Subsystem: 1462:7E06
+139046|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-2 Device 8086:A780 Subsystem: 1462:7E06
+139046|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-0 Device 8086:A780 Subsystem: 1462:7E06
+139046|Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+139046|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-9 Device 0000:0000 Subsystem: 0000:0000
+139046|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-16 Device 10DE:2803 Subsystem: 196E:13ED
+139046|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-7 Device 8086:A780 Subsystem: 1462:7E06
+139046|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-14 Device 10DE:2803 Subsystem: 196E:13ED
+139046|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-5 Device 8086:A780 Subsystem: 1462:7E06
+139046|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-12 Device 10DE:2803 Subsystem: 196E:13ED
+139046|Info:    ------------------------------------------------------
+139046|Info:    |               Detecting I2C devices                |
+139046|Info:    ------------------------------------------------------
+141380|Info:    ------------------------------------------------------
+141380|Info:    |            Detecting I2C DIMM modules              |
+141380|Info:    ------------------------------------------------------
+142721|Info:    ------------------------------------------------------
+142721|Info:    |               Detecting I2C PCI devices            |
+142721|Info:    ------------------------------------------------------
+142724|Info:    ------------------------------------------------------
+142724|Info:    |               Detecting HID devices                |
+142724|Info:    ------------------------------------------------------
+142790|Info:    [MSI Z790 GAMING PLUS WIFI (MS-7E06)] Registering RGB controller
+142790|Info:    ------------------------------------------------------
+142790|Info:    |            Detecting libusb HID devices            |
+142790|Info:    ------------------------------------------------------
+142792|Info:    ------------------------------------------------------
+142792|Info:    |              Detecting other devices               |
+142792|Info:    ------------------------------------------------------
+142798|Info:    [ResourceManager] Calling Post-detection callbacks
+142798|Info:    ------------------------------------------------------
+142798|Info:    |                Detection completed                 |
+142798|Info:    ------------------------------------------------------

@@ -1,0 +1,17 @@
+[font]
+size=20
+
+[[keyboard.bindings]]
+key = "O"
+mods = "Control|Shift"
+chars = "\u001b[79;6u"
+
+[[keyboard.bindings]]
+key = "I"
+mods = "Control|Shift"
+chars = "\u001b[73;6u"
+
+[[keyboard.bindings]]
+key = "Return"
+mods = "Control"
+action = "SpawnNewInstance"

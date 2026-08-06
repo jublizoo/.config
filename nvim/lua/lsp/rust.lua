@@ -1,7 +1,5 @@
 require("rustaceanvim")
 
-print("alsdkfjasdl")
-
 vim.g.rustaceanvim = {
 	server = {
 		default_settings = {
@@ -17,6 +15,8 @@ vim.g.rustaceanvim = {
 		},
 	},
 }
+
+vim.keymap.set('n', 'ge', function() vim.cmd.RustLsp('expandMacro') end)
 
 -- require('rust-tools').setup({
 -- 	server = {

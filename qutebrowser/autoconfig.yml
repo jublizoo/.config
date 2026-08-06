@@ -7,6 +7,17 @@
 config_version: 2
 settings:
   content.javascript.clipboard:
+    https://aur.archlinux.org: access-paste
     https://chatgpt.com: access-paste
   content.register_protocol_handler:
     https://mail.google.com?extsrc=mailto&url=%25s: true
+  fonts.default_size:
+    global: 15pt
+  fonts.web.size.default:
+    global: 16
+  fonts.web.size.default_fixed:
+    global: 20
+  fonts.web.size.minimum:
+    global: 16
+  zoom.default:
+    global: '150'

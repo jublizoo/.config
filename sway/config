@@ -23,6 +23,8 @@ bindsym Mod4+j exec wtype -k Down
 bindsym Mod4+k exec wtype -k Up
 bindsym Mod4+l exec wtype -k Right
 
+font pango:DejaVu Sans Mono 15
+
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
