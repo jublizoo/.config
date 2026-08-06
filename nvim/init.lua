@@ -61,6 +61,7 @@ vim.pack.add({
 	{ src = "https://github.com/catppuccin/nvim" },
 	{ src = "https://github.com/Mofiqul/dracula.nvim" },
 	{ src = "https://github.com/ribru17/bamboo.nvim" },
+	{ src = "https://github.com/mitander/flume.nvim" },
 })
 vim.cmd('colorscheme bamboo')
 

@@ -29,7 +29,7 @@ vim.keymap.set('n', '<leader>ff', telescope.find_files, { desc = 'Telescope find
 vim.keymap.set('n', '<leader>fg', telescope.live_grep, { desc = 'Telescope find files' })
 vim.keymap.set('n', '<leader>fb', telescope.buffers, { desc = 'Telescope find files' })
 
-require("mini.surround").setup()
+require("mini.surround").setup({ n_lines = 1000 })
 
 require("winshift").setup()
 vim.keymap.set('n', '<leader>m', ':WinShift<CR>')

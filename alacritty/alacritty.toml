@@ -1,17 +1,59 @@
 [font]
-size=20
+size=18
 
 [[keyboard.bindings]]
-key = "O"
-mods = "Control|Shift"
-chars = "\u001b[79;6u"
+key='Return'
+mods='Control'
+action='SpawnNewInstance'
 
 [[keyboard.bindings]]
-key = "I"
-mods = "Control|Shift"
-chars = "\u001b[73;6u"
+key='E'
+mods='Control'
+action='Down'
+mode='Vi'
+[[keyboard.bindings]]
+key='E'
+mods='Control'
+action='Down'
+mode='Vi'
+[[keyboard.bindings]]
+key='E'
+mods='Control'
+action='Down'
+mode='Vi'
+[[keyboard.bindings]]
+key='E'
+mods='Control'
+action='Down'
+mode='Vi'
+[[keyboard.bindings]]
+key='E'
+mods='Control'
+action='Down'
+mode='Vi'
 
 [[keyboard.bindings]]
-key = "Return"
-mods = "Control"
-action = "SpawnNewInstance"
+key='Y'
+mods='Control'
+action='Up'
+mode='Vi'
+[[keyboard.bindings]]
+key='Y'
+mods='Control'
+action='Up'
+mode='Vi'
+[[keyboard.bindings]]
+key='Y'
+mods='Control'
+action='Up'
+mode='Vi'
+[[keyboard.bindings]]
+key='Y'
+mods='Control'
+action='Up'
+mode='Vi'
+[[keyboard.bindings]]
+key='Y'
+mods='Control'
+action='Up'
+mode='Vi'

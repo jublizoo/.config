@@ -18,17 +18,21 @@ set $term alacritty
 # Your preferred application launcher
 set $menu rofi -show drun
 
-bindsym Mod4+h exec wtype -k Left
-bindsym Mod4+j exec wtype -k Down
-bindsym Mod4+k exec wtype -k Up
-bindsym Mod4+l exec wtype -k Right
+gaps inner 10px
+gaps outer 10px
+smart_gaps off
+
+output * bg #e0b8e0 solid_color
+output * bg #c1c8e0 solid_color
+output * bg #8492c2 solid_color
 
 font pango:DejaVu Sans Mono 15
 
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /home/jublizoo/backgrounds/chungus.png fill
+# output * bg /home/jublizoo/backgrounds/chungus.png fill
+
 #
 # Example configuration:
 #
@@ -245,6 +249,7 @@ mode "resize" {
     bindsym Escape mode "default"
 }
 bindsym $mod+r mode "resize"
+
 #
 # Utilities:
 #
@@ -254,10 +259,15 @@ bindsym $mod+r mode "resize"
     bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume \@DEFAULT_SINK@ +5%
     bindsym --locked XF86AudioMicMute exec pactl set-source-mute \@DEFAULT_SOURCE@ toggle
     # Special keys to adjust brightness via brightnessctl
-    bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
-    bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
+    bindsym --locked XF86MonBrightnessDown exec sudo brightnessctl set 10%-
+    bindsym --locked XF86MonBrightnessUp exec sudo brightnessctl set 10%+
     # Special key to take a screenshot with grim
     bindsym Print exec grim
+
+# Monitor
+output "LG Electronics LG HDR 4K 604NTCZHS227" {
+	position 1920 0
+}
 
 #
 # Status Bar:
@@ -268,7 +278,9 @@ bar {
 
     # When the status_command prints a new line to stdout, swaybar updates.
     # The default just shows the current date and time.
-    status_command while date +'%Y-%m-%d %X'; do sleep 1; done
+    # status_command while date +'%Y-%m-%d %X'; do sleep 1; done
+
+    status_command /home/jublizoo/.config/sway/bar.sh
 
     colors {
         statusline #ffffff
