@@ -28,6 +28,10 @@
       "rev": "a18ef908ac06b52ad9333b70e3e630b0a56ecb3d",
       "src": "https://github.com/glacambre/firenvim"
     },
+    "flume.nvim": {
+      "rev": "2ee070038817878463a3e0d0556f4ca3ef043c4a",
+      "src": "https://github.com/mitander/flume.nvim"
+    },
     "github-nvim-theme": {
       "rev": "c106c9472154d6b2c74b74565616b877ae8ed31d",
       "src": "https://github.com/projekt0n/github-nvim-theme"
@@ -35,6 +39,10 @@
     "lean.nvim": {
       "rev": "904dcc2787effac5e0394a46e78499b2c094a3df",
       "src": "https://github.com/Julian/lean.nvim"
+    },
+    "mini.surround": {
+      "rev": "8d5d0c5aa92449368ac251e85451d79d8f69d296",
+      "src": "https://github.com/nvim-mini/mini.surround"
     },
     "neo-tree.nvim": {
       "rev": "2d04b7a422c9f84788bbb4e5ca2634c81dd0f5a3",

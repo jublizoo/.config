@@ -1,7 +1,5 @@
 require("rustaceanvim")
 
-print("alsdkfjasdl")
-
 vim.g.rustaceanvim = {
 	server = {
 		default_settings = {

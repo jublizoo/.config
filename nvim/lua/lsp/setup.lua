@@ -46,6 +46,7 @@ vim.lsp.enable({ "gopls", "pylsp", "clangd", "lua-ls" })
 vim.keymap.set('n', '<space>e', '<cmd>lua vim.diagnostic.open_float()<CR>', {})
 vim.keymap.set('n', '<leader>s', vim.lsp.buf.signature_help, { silent = true })
 vim.keymap.set('n', '<leader>t', vim.lsp.buf.hover)
+vim.keymap.set('n', 'ga', vim.lsp.buf.code_action)
 vim.keymap.set('n', 'grr', vim.lsp.buf.references)
 vim.keymap.set('n', 'gt', vim.lsp.buf.type_definition)
 vim.keymap.set('n', 'gD', vim.lsp.buf.definition)
@@ -73,6 +74,10 @@ vim.keymap.set('n', 'gd', function ()
 		end
 	})
 end)
+
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
+vim.opt.foldlevel = 99
 
 require("lsp.c")
 require("lsp.go")

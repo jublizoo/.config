@@ -17,6 +17,7 @@ vim.pack.add({
 		"https://github.com/sindrets/winshift.nvim",
 		-- "https://github.com/simrat39/rust-tools.nvim",
 		-- "https://github.com/otavioschwanck/arrow.nvim",
-		"https://github.com/mrcjkb/rustaceanvim"
+		"https://github.com/mrcjkb/rustaceanvim",
+		"https://github.com/nvim-mini/mini.surround",
 })
 
