@@ -3,6 +3,8 @@
 # Copy this to ~/.config/sway/config and edit it to your liking.
 # Read `man 5 sway` for a complete reference.
 
+exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+
 ### Variables
 #
 # Logo key. Use Mod1 for Alt.
@@ -18,9 +20,16 @@ set $term ~/.cargo/bin/alacritty
 # Your preferred application launcher
 set $menu rofi -show drun
 
+
 gaps inner 20px
-gaps outer 20px
 smart_gaps off
+
+default_border pixel 2
+title_align center
+titlebar_border_thickness 0
+client.focused #88d1ec #88d1ec #000000
+client.focused_tab_title #88d1ec #88d1ec #000000
+font pango 18px
 
 # bindsym Mod4+h exec wtype -k Left
 # bindsym Mod4+j exec wtype -k Down
@@ -28,9 +37,13 @@ smart_gaps off
 # bindsym Mod4+l exec wtype -k Right
 
 client.background = #ffffff 
-output * bg #e0b8e0 solid_color
 output * bg #c1c8e0 solid_color
 output * bg #8492c2 solid_color
+output * bg #e0b8e0 solid_color
+output * bg #000000 solid_color
+
+bindsym $mod+apostrophe exec slurp | xargs -I{} grim -g "{}" - | wl-copy
+bindsym $mod+Escape exec grim - | wl-copy
 
 # set XF86MonBrightnessUp sudo exec brightnessctl set 10%-
 # set XF86MonBrightnessUp sudo exec brightnessctl set +10%
@@ -202,7 +215,7 @@ output * bg #8492c2 solid_color
     # $mod+b or $mod+v, for horizontal and vertical splits
     # respectively.
     bindsym $mod+bar splith
-    bindsym $mod+minus splitv
+    bindsym $mod+KP_Subtract splitv
 
     # Switch the current container between different layout styles
     bindsym $mod+Comma layout toggle split
@@ -213,7 +226,7 @@ output * bg #8492c2 solid_color
     bindsym $mod+f fullscreen
 
     # Toggle the current focus between tiling and floating mode
-    # bindsym $mod+Shift+space floating toggle
+    bindsym $mod+Shift+space floating toggle
 
     # Swap focus between the tiling area and the floating area
     # bindsym $mod+space focus mode_toggle
@@ -227,11 +240,11 @@ output * bg #8492c2 solid_color
     # You can send windows there and get them back later.
 
     # Move the currently focused window to the scratchpad
-    # bindsym $mod+Shift+minus move scratchpad
+    bindsym $mod+Shift+Semicolon move scratchpad
 
     # Show the next scratchpad window or hide the focused scratchpad window.
     # If there are multiple scratchpad windows, this command cycles through them.
-    # bindsym $mod+minus scratchpad show
+    bindsym $mod+Semicolon scratchpad show
 #
 # Resizing containers:
 #
@@ -295,6 +308,8 @@ output "Unknown Unknown Unknown" {
 #
 # Read `man 5 sway-bar` for more information about this section.
 bar {
+	swaybar_command waybar
+
     position top
 
     # When the status_command prints a new line to stdout, swaybar updates.

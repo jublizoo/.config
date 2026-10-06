@@ -20,10 +20,15 @@ local function enter_md()
 	vim.keymap.set('n', '$', 'g$')
 	vim.keymap.set('n', 'j', 'gj')
 	vim.keymap.set('n', 'k', 'gk')
+	vim.keymap.set('n', '<Down>', 'g<Down>')
+	vim.keymap.set('n', '<Up>', 'g<Up>')
+
 	vim.keymap.set('v', '^', 'g^')
 	vim.keymap.set('v', '$', 'g$')
 	vim.keymap.set('v', 'j', 'gj')
 	vim.keymap.set('v', 'k', 'gk')
+	vim.keymap.set('v', '<Down>', 'g<Down>')
+	vim.keymap.set('v', '<Up>', 'g<Up>')
 
 	vim.treesitter.start()
 

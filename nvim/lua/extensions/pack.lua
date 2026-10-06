@@ -19,5 +19,5 @@ vim.pack.add({
 		-- "https://github.com/otavioschwanck/arrow.nvim",
 		"https://github.com/mrcjkb/rustaceanvim",
 		"https://github.com/nvim-mini/mini.surround",
+		"https://github.com/hat0uma/csvview.nvim",
 })
-

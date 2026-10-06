@@ -23,6 +23,7 @@ require('oil').setup({
 	},
 })
 vim.keymap.set('n', '-', '<CMD>Oil<CR>')
+vim.keymap.set('n', '<kMinus>', '<CMD>Oil<CR>')
 
 local telescope = require('telescope.builtin')
 vim.keymap.set('n', '<leader>ff', telescope.find_files, { desc = 'Telescope find files' })
@@ -58,3 +59,4 @@ end
 
 require('nvim-autopairs').setup {}
 require('extensions.obsidian')
+require('csvview').setup {}

@@ -42,7 +42,7 @@ vim.keymap.set('i', 'jj', '<Esc>')
 vim.keymap.set('n', '<leader>c', 'cc<Esc>')
 vim.keymap.set('n',  '<leader>q', ':wqa<CR>')
 vim.keymap.set('n', '<leader>o', ':update<CR> :source<CR>')
-vim.keymap.set('n', '<leader>-', ':split<CR>')
+vim.keymap.set('n', '<leader><kMinus>', ':split<CR>')
 vim.keymap.set('n', '<leader>|', ':vsplit<CR>')
 vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format)
 
@@ -62,6 +62,7 @@ vim.pack.add({
 	{ src = "https://github.com/Mofiqul/dracula.nvim" },
 	{ src = "https://github.com/ribru17/bamboo.nvim" },
 	{ src = "https://github.com/mitander/flume.nvim" },
+	{ src = "https://github.com/tckmn/hotdog.vim" },
 })
 vim.cmd('colorscheme bamboo')
 

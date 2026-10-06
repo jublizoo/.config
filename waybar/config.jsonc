@@ -1,0 +1,41 @@
+/*
+ * Adapted from https://github.com/haikal-hakim/athena
+ * Include paths must be absolute or start with ~/. Waybar resolves
+ * "./modules/..." from its working directory, then exits if a file is missing.
+ */
+{
+  "include": [
+    "~/.config/waybar/modules/groups.jsonc",
+    "~/.config/waybar/modules/distro.jsonc",
+    "~/.config/waybar/modules/storage.jsonc",
+    "~/.config/waybar/modules/system.jsonc",
+    "~/.config/waybar/modules/power-profiles-daemon.jsonc",
+    "~/.config/waybar/modules/workspace.jsonc",
+    "~/.config/waybar/modules/idle-ihibitor.jsonc",
+    "~/.config/waybar/modules/audio.jsonc",
+    "~/.config/waybar/modules/connections.jsonc",
+    "~/.config/waybar/modules/battery.jsonc",
+    "~/.config/waybar/modules/clock.jsonc",
+    "~/.config/waybar/modules/tray-notif.jsonc"
+  ],
+  "layer": "top",
+  "position": "top",
+  "height": 48,
+  "spacing": 6,
+  "modules-left": [
+    "group/distro-group",
+    "group/storage",
+    "group/system"
+  ],
+  "modules-center": [
+    "sway/workspaces",
+    "idle_inhibitor"
+  ],
+  "modules-right": [
+    "group/audio",
+    "group/connections",
+    "battery",
+    "clock",
+    "tray"
+  ]
+}

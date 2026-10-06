@@ -20,6 +20,10 @@
       "rev": "cbc7b02bb99fae35cb42f514762b89b5126651ef",
       "src": "https://github.com/hrsh7th/cmp-nvim-lsp"
     },
+    "csvview.nvim": {
+      "rev": "5c22774c3ecc7f8883af5d143b366e45b1f0875d",
+      "src": "https://github.com/hat0uma/csvview.nvim"
+    },
     "dracula.nvim": {
       "rev": "ae752c13e95fb7c5f58da4b5123cb804ea7568ee",
       "src": "https://github.com/Mofiqul/dracula.nvim"
@@ -35,6 +39,10 @@
     "github-nvim-theme": {
       "rev": "c106c9472154d6b2c74b74565616b877ae8ed31d",
       "src": "https://github.com/projekt0n/github-nvim-theme"
+    },
+    "hotdog.vim": {
+      "rev": "3b3b271e27a138a9f6d4130ee55e429ccaf78f35",
+      "src": "https://github.com/tckmn/hotdog.vim"
     },
     "lean.nvim": {
       "rev": "904dcc2787effac5e0394a46e78499b2c094a3df",

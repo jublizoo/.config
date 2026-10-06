@@ -1,0 +1,13 @@
+{
+  "sway/workspaces": {
+    "format": "{name}",
+    "all-outputs": false,
+    "disable-scroll-wraparound": true,
+    "format-icons": {
+      "focused": "󰮯",
+      "urgent": "󰧵",
+      "default": "󰊠",
+      "persistent": ""
+    }
+  }
+}
