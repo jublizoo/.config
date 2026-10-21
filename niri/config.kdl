@@ -1,0 +1,25 @@
+spawn-at-startup "waybar"
+
+spawn-at-startup "swaybg" "-i" "/home/jublizoo/backgrounds/flowers.png" "-m" "fill"
+layer-rule {
+    match namespace="^wallpaper$"
+    place-within-backdrop true
+}
+
+window-rule {
+	geometry-corner-radius 12
+	clip-to-geometry true
+}
+
+window-rule {
+    match app-id="^Alacritty$"
+
+    background-effect {
+        blur true
+    }
+}
+
+include "keybinds.kdl"
+include "input.kdl"
+include "layout.kdl"
+include "not-me.kdl"

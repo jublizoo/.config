@@ -1,6 +1,7 @@
 @import "colors.css";
 
 #workspaces {
+  font-size: 20px;
   margin: 4px 5px;
   padding: 6px 6px;
   background-color: @surface_container;
@@ -11,43 +12,49 @@
   min-width: 32px;
   padding: 0 4px;
   margin: 0 2px;
-  background: transparent;
+  background: none;
+  border: none;
   border-radius: 16px;
-  color: @tertiary;
-  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+  box-shadow: none;
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+  -gtk-icon-effect: none;
+  color: #c3c3eb;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
+/* Visible workspace: top inset arc, icon color left alone */
 #workspaces button.active,
-#workspaces button.focused,
-#workspaces button.visible {
-  padding: 0 12px;
+#workspaces button.focused {
+  padding: 0 16px;
   margin: 0 2px;
-  background-color: @primary;
-  color: @on_primary;
+  background: none;
+  background-color: transparent;
+  color: #c3c3eb;
+  box-shadow: inset 0 3px 0 0 #88d1ec;
 }
 
 #workspaces button.special {
-  color: @tertiary_fixed;
+  color: #c3c3eb;
 }
 
 #workspaces button:hover {
+  background: none;
   background-color: @surface_container_highest;
-  color: @primary;
+  box-shadow: none;
+  color: #c3c3eb;
 }
 
 #workspaces button.active:hover,
-#workspaces button.focused:hover,
-#workspaces button.visible:hover {
-  background-color: @primary;
-  color: @on_primary;
-}
-
-#workspaces button.empty {
-  color: @outline_variant;
+#workspaces button.focused:hover {
+  background: none;
+  background-color: transparent;
+  color: #c3c3eb;
+  box-shadow: inset 0 3px 0 0 #88d1ec;
 }
 
 #workspaces button.urgent {
-  color: @error_container;
+  color: #e31e25;
 }
 
 #workspaces button label:first-child {
@@ -56,4 +63,39 @@
 
 #workspaces button label:last-child {
   margin-left: 2px;
+}
+
+/* Hide empty workspaces unless they are the visible one */
+#workspaces button.empty:not(.active):not(.focused) {
+  min-width: 0;
+  min-height: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: none;
+  box-shadow: none;
+}
+
+#workspaces button.empty:not(.active):not(.focused) label {
+  font-size: 0;
+  min-width: 0;
+  min-height: 0;
+  padding: 0;
+  margin: 0;
+}
+
+#workspaces button.empty.active,
+#workspaces button.empty.focused {
+  min-width: 32px;
+  padding: 0 16px;
+  margin: 0 2px;
+  background: none;
+  background-color: transparent;
+  color: #c3c3eb;
+  box-shadow: inset 0 3px 0 0 #88d1ec;
+}
+
+#workspaces button.empty.active label,
+#workspaces button.empty.focused label {
+  font-size: 20px;
 }

@@ -9,5 +9,17 @@
       "default": "󰊠",
       "persistent": ""
     }
+  },
+  "niri/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+      "b": "<span foreground='#ff6e0d'>󰈹</span>",
+      "t": "<span foreground='#89b4fa'></span>",
+      "v": "<span foreground='#009930'></span>",
+      "n": "<span foreground='#6331c7'>󰠮</span>",
+      "c": "<span foreground='#006eb1'>󰨞</span>",
+      "r": "<span foreground='#e25925'></span>",
+      "d": "<span foreground='#e31e25'>󰈙</span>"
+    }
   }
 }

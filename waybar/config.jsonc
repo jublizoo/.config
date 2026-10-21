@@ -28,7 +28,7 @@
     "group/system"
   ],
   "modules-center": [
-    "sway/workspaces",
+    "niri/workspaces",
     "idle_inhibitor"
   ],
   "modules-right": [
